@@ -1,0 +1,2 @@
+FAST_LIO:dislam_msgs:livox_ros_driver/livox_ros_driver
+-DCATKIN_DEVEL_PREFIX=/home/lusha/github/MR_SLAM/Localization/devel -DCMAKE_INSTALL_PREFIX=/home/lusha/github/MR_SLAM/Localization/install -G Unix Makefiles

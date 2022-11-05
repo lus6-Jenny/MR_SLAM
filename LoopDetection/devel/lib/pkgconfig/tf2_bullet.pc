@@ -1,0 +1,8 @@
+prefix=/home/lusha/github/MR_SLAM/LoopDetection/devel
+
+Name: tf2_bullet
+Description: Description of tf2_bullet
+Version: 0.7.5
+Cflags: -I/home/lusha/github/MR_SLAM/LoopDetection/src/geometry2/tf2_bullet/include -I/usr/include/bullet
+Libs: -L${prefix}/lib 
+Requires: 

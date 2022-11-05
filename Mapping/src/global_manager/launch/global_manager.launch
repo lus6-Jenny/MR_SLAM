@@ -16,7 +16,7 @@
     <param name="odometry_loop_enable" value="false"/>    
     <param name="loop_detection_debug" value="false"/>
     <param name="manual_robots_config" value="true"/>
-    <param name="enable_elevation_mapping" value="true"/>
+    <param name="enable_elevation_mapping" value="false"/>
     
     <!-- string  -->
     <param name="submap_topic" value="submap"/>

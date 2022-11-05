@@ -1,0 +1,8 @@
+prefix=/home/lusha/github/MR_SLAM/Mapping/install
+
+Name: kindr_ros
+Description: Description of kindr_ros
+Version: 0.3.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: geometry_msgs tf kindr

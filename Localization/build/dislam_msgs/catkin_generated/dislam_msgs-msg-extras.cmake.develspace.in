@@ -1,0 +1,2 @@
+set(dislam_msgs_MESSAGE_FILES "/home/lusha/github/MR_SLAM/Localization/src/dislam_msgs/msg/SubMap.msg;/home/lusha/github/MR_SLAM/Localization/src/dislam_msgs/msg/DiSCO.msg;/home/lusha/github/MR_SLAM/Localization/src/dislam_msgs/msg/InterPR.msg;/home/lusha/github/MR_SLAM/Localization/src/dislam_msgs/msg/InterPRs.msg;/home/lusha/github/MR_SLAM/Localization/src/dislam_msgs/msg/Loop.msg;/home/lusha/github/MR_SLAM/Localization/src/dislam_msgs/msg/Loops.msg")
+set(dislam_msgs_SERVICE_FILES "/home/lusha/github/MR_SLAM/Localization/src/dislam_msgs/srv/GetInitMap.srv")

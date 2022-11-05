@@ -1,0 +1,8 @@
+prefix=/home/lusha/github/MR_SLAM/Mapping/devel
+
+Name: global_manager
+Description: Description of global_manager
+Version: 0.1.1
+Cflags: -I/home/lusha/github/MR_SLAM/Mapping/src/global_manager/include
+Libs: -L${prefix}/lib 
+Requires: submap_msg sensor_msgs std_msgs

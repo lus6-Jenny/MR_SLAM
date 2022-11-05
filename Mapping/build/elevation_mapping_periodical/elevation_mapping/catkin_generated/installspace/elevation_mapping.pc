@@ -1,0 +1,8 @@
+prefix=/home/lusha/github/MR_SLAM/Mapping/install
+
+Name: elevation_mapping
+Description: Description of elevation_mapping
+Version: 0.4.0
+Cflags: -I${prefix}/include -I/usr/include
+Libs: -L${prefix}/lib -lelevation_mapping_library /usr/lib/x86_64-linux-gnu/libboost_system.so
+Requires: grid_map_core grid_map_ros grid_map_msgs pcl_ros slam_msg roscpp message_filters sensor_msgs std_msgs tf tf_conversions eigen_conversions kindr kindr_ros pcl_ros

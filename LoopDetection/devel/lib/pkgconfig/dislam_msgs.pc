@@ -1,0 +1,8 @@
+prefix=/home/lusha/github/MR_SLAM/LoopDetection/devel
+
+Name: dislam_msgs
+Description: Description of dislam_msgs
+Version: 1.0.0
+Cflags: -I/home/lusha/github/MR_SLAM/LoopDetection/devel/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime message_generation geometry_msgs sensor_msgs std_msgs nav_msgs

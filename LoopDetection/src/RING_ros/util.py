@@ -13,7 +13,6 @@ from sklearn.neighbors import NearestNeighbors, KDTree
 import torchvision.transforms.functional as fn
 from torch_radon import Radon, ParallelBeam, RadonFanbeam
 from mpl_toolkits.mplot3d import Axes3D
-from hog import *
 from skimage import morphology
 import multiprocessing as multiproc
 import open3d as o3d
@@ -114,25 +113,15 @@ def trans2hom(R, t):
 def load_pc_infer(pc):
     # returns Nx3 matrix
     pc = np.array(pc, dtype=np.float32)
+    # print('debug: ', pc.shape)
 
-    x_condition = np.abs(pc[...,0]) < 70.
-    y_condition = np.abs(pc[...,1]) < 70.
-    z_condition1 = pc[...,2] < 30.
-    z_condition2 = pc[...,2] > 0.
-    # intensity_condition = pc[...,3] < 100.
-    # print("pc[...,3] median: ", np.median(pc[...,3]))
-    conditions_1 = np.bitwise_and(x_condition, y_condition)
-    conditions_2 = np.bitwise_and(z_condition1, z_condition2)
-    conditions_xy = np.bitwise_and(conditions_1, conditions_2)
-    # conditions = np.bitwise_and(conditions_xy, intensity_condition)
+    idx = (np.abs(pc[:,0]) < 70.) * (pc[:,2] > 0.) * (pc[:,2] < 30.) * (np.abs(pc[:,1]) < 70.) 
 
-    hits = pc[conditions_xy]
-
-    hits[...,0] = hits[...,0] / 70.
-    hits[...,1] = hits[...,1] / 70.
-    hits[...,2] = (hits[...,2]) / 30.
-
-    return hits
+    pc = pc[idx]
+    pc[:,0] = pc[:,0] / 70.
+    pc[:,1] = pc[:,1] / 70.
+    pc[:,2] = pc[:,2] / 30. 
+    return pc      
 
 
 def calculate_entropy_array(eigen):
@@ -570,7 +559,6 @@ def solve_multilayer_translation(query, positive, rot_angle, device):
     error = error.cpu().numpy()
     
     return x, y, error
-
 
 
 # solve the overdetermined linear system using SVD by torch

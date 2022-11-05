@@ -1,0 +1,8 @@
+prefix=/home/lusha/github/MR_SLAM/LoopDetection/devel
+
+Name: tf2_sensor_msgs
+Description: Description of tf2_sensor_msgs
+Version: 0.7.5
+Cflags: -I/home/lusha/github/MR_SLAM/LoopDetection/src/geometry2/tf2_sensor_msgs/include -I/usr/include/eigen3
+Libs: -L${prefix}/lib 
+Requires: sensor_msgs tf2_ros tf2

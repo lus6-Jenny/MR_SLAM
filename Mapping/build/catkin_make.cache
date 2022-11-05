@@ -1,0 +1,2 @@
+dislam_msgs:elevation_mapping_periodical/elevation_mapping:elevation_mapping_periodical/elevation_mapping_demos:fast_gicp:global_manager:kindr_ros/kindr_msgs:kindr_ros/kindr_ros:kindr_ros/kindr_rviz_plugins:kindr_ros/multi_dof_joint_trajectory_rviz_plugins:slam_msg
+-DCATKIN_DEVEL_PREFIX=/home/lusha/github/MR_SLAM/Mapping/devel -DCMAKE_INSTALL_PREFIX=/home/lusha/github/MR_SLAM/Mapping/install -G Unix Makefiles

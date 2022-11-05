@@ -1,0 +1,8 @@
+prefix=/home/lusha/github/MR_SLAM/Mapping/install
+
+Name: slam_msg
+Description: Description of slam_msg
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 

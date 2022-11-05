@@ -98,8 +98,8 @@ This software is built on the Robotic Operating System ([ROS]), which needs to b
 * [Fast GICP](https://github.com/SMRT-AIST/fast_gicp) (for ICP refine)
   ```sh
   # Fast GICP is already include in the repo. You can use 
-  git submodule sync
-  git submodule init --recursive
+  git submodule sync --recursive
+  git submodule init 
   git submodule update
 
   # or you can clone the repo and put them in the same place
@@ -114,7 +114,7 @@ This software is built on the Robotic Operating System ([ROS]), which needs to b
    ```
 2. Make Mapping 
    ```sh
-   cd Mapping && catkin_make
+   cd Mapping && catkin_make # catkin_make out of conda environment 
    ```
 3. Make Localization 
    ```sh
@@ -126,9 +126,9 @@ This software is built on the Robotic Operating System ([ROS]), which needs to b
 
    # If you encounter the PyInit__tf2 issue, use catkin_make with your python3 environment
    catkin_make --cmake-args \
-   -DCMAKE_BUILD_TYPE=Release -DPYTHON_EXECUTABLE=/home/client/miniconda3/envs/py3/bin/python3.8 \
-   -DPYTHON_INCLUDE_DIR=/home/client/miniconda3/envs/py3/include/python3.8 \
-   -DPYTHON_LIBRARY=/home/client/miniconda3/envs/py3/lib/libpython3.8.so
+   -DCMAKE_BUILD_TYPE=Release -DPYTHON_EXECUTABLE=/home/lusha/miniconda3/envs/rospy3/bin/python3 \
+   -DPYTHON_INCLUDE_DIR=/home/lusha/miniconda3/envs/rospy3/include/python3.7m \
+   -DPYTHON_LIBRARY=/home/lusha/miniconda3/envs/rospy3/lib/libpython3.7m.so
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

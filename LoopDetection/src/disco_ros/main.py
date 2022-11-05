@@ -1,4 +1,4 @@
-#!/home/client/miniconda3/envs/py3-mink/bin/python3
+#!/home/lusha/miniconda3/envs/rospy3/bin/python
 import os
 import cv2
 import sys
