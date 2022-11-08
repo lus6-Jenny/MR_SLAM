@@ -12,12 +12,6 @@ import matplotlib.pyplot as plt
 from sklearn.neighbors import NearestNeighbors, KDTree
 import torchvision.transforms.functional as fn
 from torch_radon import Radon, ParallelBeam, RadonFanbeam
-from mpl_toolkits.mplot3d import Axes3D
-from skimage import morphology
-import multiprocessing as multiproc
-import open3d as o3d
-from sys import getsizeof
-import pyshot
 
 np.seterr(divide='ignore',invalid='ignore')
 
