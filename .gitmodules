@@ -4,3 +4,7 @@
 [submodule "LoopDetection/src/fast_gicp"]
 	path = LoopDetection/src/fast_gicp
 	url = https://github.com/SMRT-AIST/fast_gicp
+[submodule "LoopDetection/src/torch-radon"]
+	path = LoopDetection/src/torch-radon
+	url = https://github.com/matteo-ronchetti/torch-radon
+    branch = v2
